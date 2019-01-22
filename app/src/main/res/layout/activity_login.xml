@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="HELLLOOOOOOO"
+        style="@style/textNormal"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/et_name"
+        android:layout_height="wrap_content" />
     <Button
         android:layout_width="wrap_content"
         android:gravity="center"
+        android:visibility="gone"
         android:text="Set Result"
         android:layout_gravity="center"
         android:id="@+id/btn_set_result"
         android:layout_height="wrap_content" />
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
