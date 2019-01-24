@@ -23,11 +23,22 @@
 
 
     <item android:width="300dp"
-            android:height="100dp"
+            android:height="300dp"
 
         android:left="200dp"
         >
-        <shape android:shape="rectangle">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+
+
+    <item android:height="100dp"
+        android:width="100dp"
+        android:left="600dp"
+        >
+        <shape android:shape="oval">
             <solid android:color="@color/colorPrimary"/>
         </shape>
     </item>

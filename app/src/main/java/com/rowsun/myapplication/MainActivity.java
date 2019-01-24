@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 //               progressDialog.show();
 //                progressDialog.setProgress(50);
-                showAlert();
+             //   showAlert();
+                startActivity(new Intent(MainActivity.this, ListViewActivity.class));
             }
         });
         btnGetResult.setVisibility(View.VISIBLE);
@@ -76,8 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        EditText e = v.findViewById(R.id.et_name);
-                        Toast.makeText( MainActivity.this, e.getText().toString(), Toast.LENGTH_LONG).show();
+
                     }
                 })
                 .setNegativeButton("Cancel", null)

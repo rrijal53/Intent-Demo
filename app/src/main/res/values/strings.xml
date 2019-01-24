@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="list">
+        <item>List item 1</item>
+        <item>List item 2</item>
+        <item>List item 3</item>
+        <item>List item 4</item>
+        <item>List item 5</item>
+    </string-array>
 </resources>
