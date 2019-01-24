@@ -1,9 +1,11 @@
-package com.rowsun.myapplication;
+package com.rowsun.myapplication.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.rowsun.myapplication.R;
 
 public class LoginActivity extends AppCompatActivity {
 

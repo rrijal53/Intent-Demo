@@ -1,9 +1,11 @@
-package com.rowsun.myapplication;
+package com.rowsun.myapplication.ui;
 
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.rowsun.myapplication.R;
 
 public class WebActivityActivity extends AppCompatActivity {
 

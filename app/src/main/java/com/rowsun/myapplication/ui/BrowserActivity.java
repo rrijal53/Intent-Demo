@@ -1,4 +1,4 @@
-package com.rowsun.myapplication;
+package com.rowsun.myapplication.ui;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.widget.TextView;
+
+import com.rowsun.myapplication.R;
 
 public class BrowserActivity extends AppCompatActivity {
     TextView webView;
