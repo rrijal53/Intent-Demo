@@ -1,4 +1,4 @@
-package com.rowsun.myapplication.ui;
+package com.rowsun.myapplication.ui.activity;
 
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;

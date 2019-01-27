@@ -1,7 +1,7 @@
 package com.rowsun.myapplication.model;
 
 public class News {
-    private String id, title, description;
+    protected String id, title, description;
     private int image;
 
     public News(String id, String title, String description, int image) {

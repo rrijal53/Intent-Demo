@@ -1,4 +1,4 @@
-package com.rowsun.myapplication.ui;
+package com.rowsun.myapplication.ui.activity;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
