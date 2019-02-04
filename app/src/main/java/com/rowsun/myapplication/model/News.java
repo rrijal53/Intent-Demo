@@ -1,5 +1,9 @@
 package com.rowsun.myapplication.model;
 
+import android.support.v4.content.LocalBroadcastManager;
+
+import com.rowsun.myapplication.MainApplication;
+
 public class News {
     protected String id, title, description;
     private int image;
@@ -10,6 +14,9 @@ public class News {
         this.description = description;
         this.image = image;
     }
+
+
+
 
     public String getId() {
         return id;

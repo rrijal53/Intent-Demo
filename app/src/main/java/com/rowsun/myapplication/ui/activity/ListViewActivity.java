@@ -22,6 +22,7 @@ import com.rowsun.myapplication.R;
 import com.rowsun.myapplication.ui.adapter.NewsAdapter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ListViewActivity extends AppCompatActivity {
@@ -89,6 +90,7 @@ public class ListViewActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 Log.d(
                         "RRR", "onTextChanged: " + charSequence);
+                listView.setAdapter(new NewsAdapter(ListViewActivity.this, filterList(charSequence.toString())));
             }
 
             @Override
@@ -100,8 +102,18 @@ public class ListViewActivity extends AppCompatActivity {
 
     public List<News> filterList(String s){
         List<News> filteredList = new ArrayList<>();
-        for (News n: list
-             ) {
+
+//        for (int i = 0 ;i < list.size() ;i ++){
+//            News n = list.get(i);
+//
+//        }
+
+//        HashMap<String, List<News>> map = new HashMap<>();
+//        map.put("International", list);
+//        map.put("Sports",filteredList);
+//
+//
+        for (News n : list) {
             String title = n.getTitle();
             String desc = n.getDescription();
             if (title.contains(s) || desc.contains(s) ){
