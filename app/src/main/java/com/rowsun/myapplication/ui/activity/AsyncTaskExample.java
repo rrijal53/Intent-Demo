@@ -1,12 +1,11 @@
 package com.rowsun.myapplication.ui.activity;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AsyncTaskExample extends AsyncTask<Void, Void, List<String>> {
+public class AsyncTaskExample extends AsyncTask<String, Integer, List<String>> {
 
     List<String> nameList;
     OnSuccessListener listener;
@@ -15,9 +14,10 @@ public class AsyncTaskExample extends AsyncTask<Void, Void, List<String>> {
         this.listener = listener;
     }
 
-    interface  OnSuccessListener {
+    interface OnSuccessListener {
         void onSuccess(String s);
     }
+
     public AsyncTaskExample() {
         nameList = new ArrayList<>();
         nameList.add("Rosjam");
@@ -35,9 +35,9 @@ public class AsyncTaskExample extends AsyncTask<Void, Void, List<String>> {
     }
 
     @Override
-    protected List<String> doInBackground(Void... voids) {
+    protected List<String> doInBackground(String... str) {
         List<String> list = new ArrayList<>();
-
+        //  Log.d("", "doInBackground: " + str[0]);
         for (String s : nameList) {
             if (s.startsWith("R")) {
                 list.add(s);
@@ -54,12 +54,14 @@ public class AsyncTaskExample extends AsyncTask<Void, Void, List<String>> {
     @Override
     protected void onPostExecute(List<String> strings) {
         super.onPostExecute(strings);
-        for (String s: strings
-             ) {
-            if (listener!=null){
+        for (String s : strings
+        ) {
+            if (listener != null) {
                 listener.onSuccess(s);
             }
-           // Log.d("Tag", s);
+            // Log.d("Tag", s);
         }
     }
+
+
 }
