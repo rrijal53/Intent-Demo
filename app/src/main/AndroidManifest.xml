@@ -14,16 +14,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.AsyncExampleActivity">
+        <activity android:name=".ui.activity.DatabaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".ui.activity.ThreadExampleActivity">
 
         </activity>
+        <activity android:name=".ui.activity.PlayActivity">
+
+        </activity>
+        <activity android:name=".ui.activity.AsyncExampleActivity"></activity>
+        <activity android:name=".ui.activity.ThreadExampleActivity" />
         <activity android:name=".ui.activity.ViewPagerExampleActivity" />
         <activity android:name=".ui.activity.FragmentDemoActivity" />
         <activity android:name=".ui.activity.ListViewActivity" />
@@ -41,7 +44,7 @@
         <activity android:name=".ui.activity.LoginActivity" />
         <activity
             android:name=".ui.activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver android:name=".service.MyBroadcastReceiver" />
 
