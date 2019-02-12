@@ -17,7 +17,7 @@ import java.util.List;
 public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "broadway";
-    private static final String TABLE_USER = "USER";
+    public static final String TABLE_USER = "USER";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_FULLNAME = "fullname";
     private static final String COLUMN_USERNAME = "userName";
