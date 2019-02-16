@@ -4,10 +4,10 @@
     package="com.rowsun.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:name=".MainApplication"
@@ -17,15 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.ContentProvidersActivity"></activity>
-        <activity android:name=".ui.activity.DatabaseActivity">
+        <activity android:name=".ui.activity.JsonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.PlayActivity"></activity>
+        <activity android:name=".ui.activity.ContentProvidersActivity" />
+        <activity android:name=".ui.activity.DatabaseActivity">
+
+        </activity>
+        <activity android:name=".ui.activity.PlayActivity" />
         <activity android:name=".ui.activity.AsyncExampleActivity" />
         <activity android:name=".ui.activity.ThreadExampleActivity" />
         <activity android:name=".ui.activity.ViewPagerExampleActivity" />
@@ -52,7 +55,7 @@
         <provider
             android:name=".StudentsProvider"
             android:authorities="com.rowsun.myapplication.StudentsProvider" />
-    <provider
+        <provider
             android:name=".MyDbProvider"
             android:authorities="com.rowsun.myapplication.MyDbProvider" />
 

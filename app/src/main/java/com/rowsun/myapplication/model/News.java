@@ -2,11 +2,16 @@ package com.rowsun.myapplication.model;
 
 import android.support.v4.content.LocalBroadcastManager;
 
+import com.google.gson.annotations.SerializedName;
 import com.rowsun.myapplication.MainApplication;
 
 public class News {
 
-    protected String id, title, description;
+    private String id,title;
+
+    @SerializedName("description")
+    private String description;
+
     private int image;
 
     public News(String id, String title, String description, int image) {
@@ -49,5 +54,15 @@ public class News {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    @Override
+    public String toString() {
+        return "News{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", image=" + image +
+                '}';
     }
 }
